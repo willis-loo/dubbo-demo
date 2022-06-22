@@ -1,6 +1,5 @@
 package com.lvky.framework.protocol;
 
-import com.lvky.Invocation;
 import com.lvky.framework.protocol.util.URL;
 
 public interface Protocol {

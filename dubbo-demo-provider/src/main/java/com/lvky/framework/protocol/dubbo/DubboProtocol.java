@@ -10,7 +10,6 @@ public class DubboProtocol implements Protocol {
     public void start(URL url) {
         NettyServer nettyServer = new NettyServer();
         nettyServer.start(url.getHostname(), url.getPort());
-
     }
 
 

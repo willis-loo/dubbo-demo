@@ -1,6 +1,6 @@
 package com.lvky.framework.protocol.http;
 
-import com.lvky.Invocation;
+import com.lvky.protocol.util.Invocation;
 import com.lvky.framework.protocol.register.LocalRegister;
 import org.apache.commons.io.IOUtils;
 

@@ -1,8 +1,8 @@
 package com.lvky.protocol.http;
 
 
-import com.lvky.HttpClient;
-import com.lvky.Invocation;
+import com.lvky.protocol.util.HttpClient;
+import com.lvky.protocol.util.Invocation;
 import com.lvky.protocol.Protocol;
 import com.lvky.protocol.URL;
 

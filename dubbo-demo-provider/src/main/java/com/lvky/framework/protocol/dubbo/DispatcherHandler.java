@@ -1,6 +1,6 @@
 package com.lvky.framework.protocol.dubbo;
 
-import com.lvky.Invocation;
+import com.lvky.protocol.util.Invocation;
 import io.netty.channel.ChannelHandlerContext;
 
 import java.util.concurrent.ExecutorService;

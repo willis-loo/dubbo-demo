@@ -2,6 +2,8 @@ package com.lvky;
 
 import com.lvky.api.DemoService;
 import com.lvky.api.impl.DemoServiceImpl;
+import com.lvky.framework.protocol.Protocol;
+import com.lvky.framework.protocol.ProtocolFactory;
 import com.lvky.framework.protocol.http.HttpServer;
 import com.lvky.framework.protocol.register.LocalRegister;
 import com.lvky.framework.protocol.register.ZookeeperRegister;
@@ -15,7 +17,10 @@ public class Provider {
 
         LocalRegister.register(DemoService.class.getName(), DemoServiceImpl.class);
 
-        HttpServer httpServer = new HttpServer();
-        httpServer.start("localhost",8080);
+        //HttpServer httpServer = new HttpServer();
+        //httpServer.start("localhost",8080);
+
+        Protocol protocol = ProtocolFactory.getProtocol();
+        protocol.start(url);
     }
 }

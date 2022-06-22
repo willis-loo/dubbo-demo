@@ -1,9 +1,10 @@
-package com.lvky;
+package com.lvky.protocol.util;
 
 import com.lvky.protocol.LoadBalance;
 import com.lvky.protocol.Protocol;
 import com.lvky.protocol.ProtocolFactory;
 import com.lvky.protocol.URL;
+import com.lvky.protocol.util.Invocation;
 import com.lvky.register.ZookeeperRegister;
 
 import java.lang.reflect.InvocationHandler;

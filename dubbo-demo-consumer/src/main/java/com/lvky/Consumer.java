@@ -1,6 +1,7 @@
 package com.lvky;
 
 import com.lvky.api.DemoService;
+import com.lvky.protocol.util.ProxyFactory;
 
 public class Consumer {
     public static void main(String[] args) {

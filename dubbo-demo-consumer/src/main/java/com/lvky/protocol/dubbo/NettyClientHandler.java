@@ -1,6 +1,6 @@
 package com.lvky.protocol.dubbo;
 
-import com.lvky.Invocation;
+import com.lvky.protocol.util.Invocation;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 
@@ -20,6 +20,7 @@ public class NettyClientHandler extends ChannelInboundHandlerAdapter implements 
     @Override
     public synchronized void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
         result = msg.toString();
+        System.out.println(result);
         notify();
     }
 

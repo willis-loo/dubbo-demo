@@ -1,12 +1,9 @@
-package com.lvky;
+package com.lvky.protocol.util;
 
 import lombok.Data;
 
 import java.io.Serializable;
 
-/**
- * @author lvky-a
- */
 @Data
 public class Invocation implements Serializable {
     //需要传输的数据

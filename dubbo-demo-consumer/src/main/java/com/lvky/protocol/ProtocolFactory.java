@@ -10,7 +10,7 @@ public class ProtocolFactory {
 
         String name = System.getProperty("protocolName");
         if (name == null || name.equals("")) {
-            name = "http";
+            name = "dubbo";
         }
         switch (name) {
             case "http":

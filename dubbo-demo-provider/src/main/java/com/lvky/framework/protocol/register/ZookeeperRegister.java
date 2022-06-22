@@ -19,7 +19,7 @@ public class ZookeeperRegister {
 
     static {
         client = CuratorFrameworkFactory
-                .newClient("localhost:2182", new RetryNTimes(3, 1000));
+                .newClient("localhost:2181", new RetryNTimes(3, 1000));
         client.start();
 
     }

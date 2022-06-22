@@ -1,6 +1,6 @@
 package com.lvky.protocol.dubbo;
 
-import com.lvky.Invocation;
+import com.lvky.protocol.util.Invocation;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelOption;

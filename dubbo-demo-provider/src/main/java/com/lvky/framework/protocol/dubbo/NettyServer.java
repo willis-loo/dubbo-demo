@@ -1,6 +1,7 @@
 package com.lvky.framework.protocol.dubbo;
 
 import io.netty.bootstrap.ServerBootstrap;
+import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelPipeline;
 import io.netty.channel.EventLoopGroup;
@@ -36,7 +37,9 @@ public class NettyServer {
                             pipeline.addLast("handler", new NettyServerHandler(new DispatcherHandler(new RequestHandler())));
                         }
                     });
-            bootstrap.bind(hostname, port).sync();
+            ChannelFuture sync = bootstrap.bind(hostname, port).sync();
+            sync.channel().closeFuture().sync();/*阻塞当前线程，直到服务器的ServerChannel被关闭*/
+
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
